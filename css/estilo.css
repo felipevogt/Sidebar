@@ -1,0 +1,140 @@
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+  display: flex;
+  width: 100%; }
+
+.sidebar {
+  text-align: center;
+  width: 55px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 999;
+  background: #2b2b2b;
+  color: #fff; }
+  .sidebar .active {
+    margin-left: -250px; }
+  .sidebar .sidebar-content {
+    margin-top: 50px; }
+    .sidebar .sidebar-content img {
+      margin-bottom: 10px;
+      width: 40px;
+      box-shadow: 2px 2px 5px black; }
+    .sidebar .sidebar-content #item1 .tooltiptext2 {
+      background-color: #7bdff2; }
+    .sidebar .sidebar-content #item1 .tooltiptext2::after {
+      border-color: transparent #7bdff2 transparent transparent; }
+    .sidebar .sidebar-content #item1 #icon1 {
+      background: #7bdff2; }
+    .sidebar .sidebar-content #item1 #icon1:hover {
+      background: #70cbdc; }
+    .sidebar .sidebar-content #item2 .tooltiptext2 {
+      background-color: #7dcfb6; }
+    .sidebar .sidebar-content #item2 .tooltiptext2::after {
+      border-color: transparent #7dcfb6 transparent transparent; }
+    .sidebar .sidebar-content #item2 #icon2 {
+      background: #7dcfb6; }
+    .sidebar .sidebar-content #item2 #icon2:hover {
+      background: #72bda6; }
+    .sidebar .sidebar-content #item3 .tooltiptext2 {
+      background-color: #f2b5d4; }
+    .sidebar .sidebar-content #item3 .tooltiptext2::after {
+      border-color: transparent #f2b5d4 transparent transparent; }
+    .sidebar .sidebar-content #item3 #icon3 {
+      background: #f2b5d4; }
+    .sidebar .sidebar-content #item3 #icon3:hover {
+      background: #dca5c1; }
+    .sidebar .sidebar-content #item4 .tooltiptext2 {
+      background-color: #ffac81; }
+    .sidebar .sidebar-content #item4 .tooltiptext2::after {
+      border-color: transparent #ffac81 transparent transparent; }
+    .sidebar .sidebar-content #item4 #icon4 {
+      background: #ffac81; }
+    .sidebar .sidebar-content #item4 #icon4:hover {
+      background: #e89d76; }
+  .sidebar .sidebar-footer {
+    border-top-style: solid;
+    border-width: 2px;
+    border-top-color: #f7bd60; }
+    .sidebar .sidebar-footer img {
+      margin-top: 10px;
+      width: 40px;
+      box-shadow: 2px 2px 5px black; }
+    .sidebar .sidebar-footer #item5 .tooltiptext2 {
+      margin-top: 13px;
+      background-color: #f7bd60; }
+    .sidebar .sidebar-footer #item5 .tooltiptext2::after {
+      border-color: transparent #f7bd60 transparent transparent; }
+    .sidebar .sidebar-footer #item5 #icon5 {
+      background: #f7bd60; }
+    .sidebar .sidebar-footer #item5 #icon5:hover {
+      background: #e1ac58; }
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+  width: calc(100% - 55px);
+  padding: 40px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+#content.active {
+  width: 100%; }
+
+/* ---------------------------------------------------
+    Tooltip STYLE
+----------------------------------------------------- */
+.tooltip2 {
+  position: relative;
+  display: inline-block; }
+
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 150px;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 99;
+  margin-top: 5px;
+  left: 120%; }
+
+.tooltip2 .tooltiptext2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent red transparent transparent; }
+
+.tooltip2:hover .tooltiptext2 {
+  visibility: visible; }
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px; }
+
+  #sidebar.active {
+    margin-left: 0; }
+
+  #content {
+    width: 100%; }
+
+  #content.active {
+    width: calc(100% - 250px); }
+
+  #sidebarCollapse span {
+    display: none; } }
+
+/*# sourceMappingURL=estilo.css.map */
